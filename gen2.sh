@@ -311,7 +311,7 @@ public class AlarmService extends Service {
                 : getString(R.string.sunrise_alarm_title);
 
         Notification notification = new Notification.Builder(this, CHANNEL_ID)
-                .setSmallIcon(android.R.drawable.ic_dialog_time)
+                .setSmallIcon(R.drawable.ic_notif)
                 .setContentTitle(title)
                 .setContentText(getString(R.string.sun_simulation))
                 .setCategory(Notification.CATEGORY_ALARM)
@@ -319,7 +319,7 @@ public class AlarmService extends Service {
                 .setOngoing(true)
                 .setAutoCancel(false)
                 .addAction(new Notification.Action.Builder(
-                        android.R.drawable.ic_media_pause,
+                        R.drawable.ic_notif,
                         getString(R.string.stop),
                         stopPendingIntent).build())
                 .build();
