@@ -97,7 +97,7 @@ cat > app/src/main/AndroidManifest.xml <<'EOF'
 
     <application
         android:allowBackup="true"
-        android:icon="@android:drawable/ic_dialog_time"
+        android:icon="@drawable/ic_sun"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
@@ -142,6 +142,43 @@ cat > app/src/main/AndroidManifest.xml <<'EOF'
     </application>
 
 </manifest>
+EOF
+
+cat > app/src/main/res/drawable/ic_sun.xml <<'EOF'
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#10233F"
+        android:pathData="M12,0 a12,12 0 1,0 0,24 a12,12 0 1,0 0,-24 z" />
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M12,7 a5,5 0 1,0 0,10 a5,5 0 1,0 0,-10 z" />
+    <path
+        android:strokeColor="#FFB300"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M12,2 L12,4 M12,20 L12,22 M2,12 L4,12 M20,12 L22,12 M5,5 L6.5,6.5 M17.5,17.5 L19,19 M19,5 L17.5,6.5 M6.5,17.5 L5,19" />
+</vector>
+EOF
+
+cat > app/src/main/res/drawable/ic_notif.xml <<'EOF'
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,7 a5,5 0 1,0 0,10 a5,5 0 1,0 0,-10 z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M12,1 L12,3 M12,21 L12,23 M1,12 L3,12 M21,12 L23,12 M4,4 L5.5,5.5 M18.5,18.5 L20,20 M20,4 L18.5,5.5 M5.5,18.5 L4,20" />
+</vector>
 EOF
 
 cat > app/src/main/java/com/example/sunalarm/Prefs.java <<'EOF'
