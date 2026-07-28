@@ -35,6 +35,7 @@ jobs:
           bash gen3.sh
           bash gen4.sh
           bash gen5.sh
+          bash gen6.sh
 
       - name: Build debug APK
         run: gradle assembleDebug --stacktrace
