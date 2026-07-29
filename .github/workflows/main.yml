@@ -40,6 +40,7 @@ jobs:
           bash gen8.sh
           bash gen9.sh
           bash gen10.sh
+          bash gen11.sh
 
       - name: Build debug APK
         run: gradle assembleDebug --stacktrace
